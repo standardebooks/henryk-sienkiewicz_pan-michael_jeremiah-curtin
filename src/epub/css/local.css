@@ -17,6 +17,12 @@ footer{
 	font-variant: small-caps;
 }
 
+[epub|type~="z3998:postscript"]{
+	margin-top: 1em;
+	text-align: initial;
+	text-indent: 0;
+}
+
 /* All epigraphs */
 [epub|type~="epigraph"]{
 	font-style: italic;
@@ -98,3 +104,36 @@ section[epub|type~="dedication"] > *{
 	}
 }
 /* End all dedications */
+
+[epub|type~="z3998:song"] p,
+[epub|type~="z3998:verse"] p{
+	text-align: initial;
+	text-indent: 0;
+}
+
+[epub|type~="z3998:song"] p + p,
+[epub|type~="z3998:verse"] p + p{
+	margin-top: 1em;
+}
+
+[epub|type~="z3998:song"] p > span,
+[epub|type~="z3998:verse"] p > span{
+	display: block;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+[epub|type~="z3998:song"] p > span + br,
+[epub|type~="z3998:verse"] p > span + br{
+	display: none;
+}
+
+#chapter-13 [epub|type~="z3998:song"] span:last-child{
+	padding-left: 12em;
+	text-indent: -1em;
+}
+
+#chapter-34 [epub|type~="z3998:song"] span:last-child{
+	padding-left: 9em;
+	text-indent: -1em;
+}
