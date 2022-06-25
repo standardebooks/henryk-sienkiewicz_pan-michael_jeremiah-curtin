@@ -123,6 +123,10 @@ section[epub|type~="dedication"] > *{
 	text-indent: -1em;
 }
 
+#chapter-23 [epub|type~="z3998:salutation"]{
+	font-variant: normal;
+}
+
 #chapter-34 [epub|type~="z3998:song"] span:last-child{
 	padding-left: 9em;
 	text-indent: -1em;
